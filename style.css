@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,10 +15,10 @@ button {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
-  padding: 10em 0;
+  padding: 3em 0;
   background-color: #f6f0c4;
   background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 84%);
   text-align: center;
@@ -36,7 +36,7 @@ body {
 }
 
 .itemList {
-  height: 40em;
+  height: 30em;
   overflow-y: auto;
 }
 
@@ -55,12 +55,16 @@ body {
 }
 
 .item_delete:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 input:checked + label {
   text-decoration: line-through;
   color: rgb(181, 181, 181);
+}
+
+label {
+  font: 1rem/1 'Noto Sans KR';
 }
 
 .footer {
